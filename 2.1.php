@@ -15,4 +15,9 @@ function validateUname($data)
 		}
 }
 
-echo validateUname($argv[1]).PHP_EOL;
+if (empty($argv[1])){
+	echo "How to use? etc. php 2.1.php lkjhg_99";
+} else {
+	echo validateUname($argv[1]) . PHP_EOL;
+}
+
